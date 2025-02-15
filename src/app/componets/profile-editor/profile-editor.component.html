@@ -52,18 +52,17 @@
     <div class="profile-information" *ngIf="profData">
         <div class="name-container">
             <p><span class="title">First Name: </span><span>{{profData.firstName}}</span></p>
-            <p><span class="title">Last Name: </span> <span>{{profData.lastName}}</span></p>
+            <p><span class="title">Last Name: </span><span>{{profData.lastName}}</span></p>
             <div>
                 <span class="title">Aliases:</span>
                 <p class="alias" *ngFor="let alias of profData.aliases;">{{alias}}</p>
             </div>
-            
         </div>
         <div class="address-container">
-            <p><span class="title">Street: </span> <span>{{profData.street}}</span></p>
-            <p><span class="title">State: </span> <span>{{profData.state}}</span></p>
-            <p><span class="title">City: </span> <span>{{profData.city}}</span></p>
-            <p><span class="title">Zipcode: </span> <span>{{profData.zip}}</span></p>
+            <p><span class="title">Street: </span><span>{{profData.street}}</span></p>
+            <p><span class="title">State: </span><span>{{profData.state}}</span></p>
+            <p><span class="title">City: </span><span>{{profData.city}}</span></p>
+            <p><span class="title">Zipcode: </span><span>{{profData.zip}}</span></p>
         </div>
     </div>
 </div>
