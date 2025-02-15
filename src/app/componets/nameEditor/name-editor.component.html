@@ -1,0 +1,15 @@
+<div class="form-container">
+    <form [formGroup]="form">
+        <mat-form-field>
+            <mat-label>First Name</mat-label>
+        <input matInput id="first-name" type="text" formControlName="firstName">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput id="last-name" type="text" formControlName="lastName">  
+        </mat-form-field>
+        <button mat-button type="submit" (click)="onSubmit()">Submit</button>
+    </form>
+    <p>{{nameEntered}}</p>
+</div>
+
